@@ -1,6 +1,6 @@
 # Bhavesh Negi - Portfolio Website
 
-A modern, responsive portfolio website showcasing skills, experience, and projects in data science and analytics.
+A modern, responsive portfolio website showcasing skills, experience, and projects as an AI Engineer and Data Science professional.
 
 ## 🚀 Features
 
@@ -11,15 +11,19 @@ A modern, responsive portfolio website showcasing skills, experience, and projec
 - **SEO Optimized**: Proper HTML structure and meta tags
 - **Fast Loading**: Optimized CSS and JavaScript for performance
 - **Easy to Customize**: Well-organized code structure for easy updates
+- **GitHub Integration**: Direct links to your actual GitHub repositories
+- **Social Media Links**: Working LinkedIn and GitHub profile links
 
 ## 📁 File Structure
 
 ```
 portfolio_main/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and responsive design
+├── index.html          # Main HTML file with updated content
+├── styles.css          # CSS styles with project link styling
 ├── script.js           # JavaScript functionality
-└── README.md           # This file
+├── config.js           # Configuration file for easy updates
+├── README.md           # This file
+└── DEPLOYMENT.md       # Deployment instructions
 ```
 
 ## 🛠️ Setup Instructions
@@ -31,14 +35,41 @@ portfolio_main/
    - Node.js: `npx serve .`
    - VS Code: Use Live Server extension
 
+## 🎯 Current Portfolio Content
+
+### **Personal Information**
+- **Role**: AI Engineer at @Phoal Digital
+- **Location**: Vadodara, Gujarat, India
+- **Contact**: +91 9313198316 | bhaveshnegi98@gmail.com
+
+### **Work Experience**
+- **Analytics Intern** at Adani Power Limited (Jan 2025 - May 2025)
+- **Data Science Intern** at UniCoverge Technologies (Apr 2024 - Jun 2024)
+
+### **Featured Projects** (with GitHub links)
+- **Airline Market Demand Tracker** - Python-based analytics system
+- **Automatic Concept Mapper** - JavaScript AI application
+- **Customer Churn Prediction System** - ML project with Jupyter Notebooks
+- **Netflix Data Analysis** - Data analysis project
+- **SMS Spam Classification** - ML classification project
+
+### **Social Media**
+- **LinkedIn**: [https://linkedin.com/in/bhavesh-negi-59314224a/](https://linkedin.com/in/bhavesh-negi-59314224a/)
+- **GitHub**: [https://github.com/bhaveshnegi](https://github.com/bhaveshnegi)
+
 ## 🎨 Customization Guide
 
 ### 1. Personal Information
-Edit `index.html` to update:
+**Option 1: Edit `index.html` directly**
 - Name, title, and description
 - Contact information
 - Social media links
 - Profile picture (replace placeholder icon)
+
+**Option 2: Use `config.js` (Recommended)**
+- Update personal information in the configuration file
+- Changes automatically apply when you refresh the browser
+- No need to edit HTML files
 
 ### 2. Content Updates
 - **Experience**: Add new internships/jobs in the timeline section
@@ -60,6 +91,13 @@ Edit `script.js` to add:
 - Form submission handling
 - Additional animations
 - Analytics integration
+
+### 5. Configuration Management
+Edit `config.js` to easily update:
+- Personal information and social links
+- Project details and GitHub repositories
+- Skills and certifications
+- Theme colors and settings
 
 ## 🔧 Adding New Sections
 
@@ -182,9 +220,9 @@ The website includes:
 ## 📞 Support
 
 For questions or customization help:
-- Email: bhaveshnegi98@gmail.com
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- **Email**: bhaveshnegi98@gmail.com
+- **LinkedIn**: [https://linkedin.com/in/bhavesh-negi-59314224a/](https://linkedin.com/in/bhavesh-negi-59314224a/)
+- **GitHub**: [https://github.com/bhaveshnegi](https://github.com/bhaveshnegi)
 
 ## 📄 License
 
@@ -194,4 +232,13 @@ This portfolio template is free to use and modify for personal and commercial pr
 
 **Happy Coding! 🚀**
 
-*Last updated: December 2024*
+## 🔄 Recent Updates
+
+- ✅ **Updated Role**: Changed from "Data Science & Analytics Professional" to "AI Engineer & Data Science Professional"
+- ✅ **Added Real Projects**: Integrated actual GitHub repositories with direct links
+- ✅ **Working Social Links**: LinkedIn and GitHub profiles now properly linked
+- ✅ **Enhanced Project Cards**: Added "View Project" buttons with GitHub repository links
+- ✅ **Configuration System**: Added `config.js` for easy portfolio updates
+- ✅ **Improved Styling**: Enhanced project link styling and hover effects
+
+*Last updated: January 2025*
