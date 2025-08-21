@@ -3,7 +3,7 @@
 A modern, responsive portfolio website showcasing skills, experience, and projects as an AI Engineer and Data Science professional.
 
 **🌐 Live Demo**  
-# **View Live Demo** → https://portfolio-main-tau-lime.vercel.app/
+[https://portfolio-main-tau-lime.vercel.app/](https://portfolio-main-tau-lime.vercel.app/)
 
 ## 🚀 Features
 
