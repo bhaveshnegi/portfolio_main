@@ -41,7 +41,7 @@ portfolio_main/
 ## 🎯 Current Portfolio Content
 
 ### **Personal Information**
-- **Role**: AI Engineer at @Phoal Digital
+- **Role**: AI Engineer at @NexBack Technology
 - **Location**: Vadodara, Gujarat, India
 - **Contact**: +91 9313198316 | bhaveshnegi98@gmail.com
 
