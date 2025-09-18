@@ -66,10 +66,10 @@ const PORTFOLIO_CONFIG = {
     // Projects
     projects: [
         {
-            name: "Netflix Data Analysis",
-            description: "Comprehensive analysis of Netflix content data to identify trends and patterns in viewership and content preferences.",
+            name: "Video Lens Pro",
+            description: "AI-Powered Video Analysis platform",
             icon: "fas fa-chart-line",
-            link: "#" // Add project link if available
+            link: "https://github.com/bhaveshnegi/VideoLensPro" // Add project link if available
         },
         {
             name: "SMS Spam Classification",
