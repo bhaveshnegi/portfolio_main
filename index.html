@@ -1295,12 +1295,47 @@
         </div>
     </footer>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
         (function () {
-            emailjs.init("uJwb1qzDgZyFxALfJ"); // replace with your EmailJS Public Key
+            emailjs.init({ publicKey: "7Nme8uDq-M2zYHJNz" });
         })();
+
+        function sendMessage() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+
+            const templateParams = {
+                name: name,
+                email: email,
+                title: subject,
+                message: message
+            };
+
+            emailjs.send("service_7ozp7lh", "template_gs9d482", templateParams, "7Nme8uDq-M2zYHJNz")
+                .then((response) => {
+                    console.log("SUCCESS!", response);
+                    alert("✅ Message sent successfully!");
+                }, (error) => {
+                    console.error("FAILED...", error);
+                    alert("❌ Failed to send: " + error.text);
+                });
+        }
     </script>
+
 
 
     <script>
@@ -1402,45 +1437,7 @@
 
         highlightActiveNav();
 
-        // Contact form handling
-        function sendMessage() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;  // this will map to {{title}}
-    const message = document.getElementById('message').value;
-    
-    if (!name || !email || !subject || !message) {
-        alert('Please fill in all fields');
-        return;
-    }
-    
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address');
-        return;
-    }
 
-    // Template variables must exactly match EmailJS template
-    const templateParams = {
-        name: name,
-        email: email,
-        title: subject,   // ✅ match {{title}}
-        message: message
-    };
-
-    emailjs.send("service_7ozp7lh", "template_gs9d482", templateParams)
-        .then(() => {
-            alert("✅ Message sent successfully!");
-            document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('subject').value = '';
-            document.getElementById('message').value = '';
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-            alert("❌ Failed to send. Please try again later.");
-        });
-}
 
 
 
